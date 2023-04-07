@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #000814;
+    color: #fff;
+    padding-left: 25px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-left {
+    flex: 4;
+    box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 30px;
+}
+
+.container-right {
+    flex: 2;
+    box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 30px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#available-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shoe {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.shoe img {
+    width: 300px;
+    height: 300px;
+}
+
+.shoe p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    width: 400px;
+    height: 60px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #fca311;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li img {
+    width: 50px;
+    height: 50px;
+}
+
+.price-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+button {
+    background-color: #fcbf49;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 40px;
+}
+
+button:hover {
+    background-color: #fca311;
+}
+
+@media screen and (max-width:450px) {
+    header {
+        width: 450px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container-left {
+        box-shadow: none;
+
+    }
+
+    .container-right {
+        flex: none;
+        width: 380px;
+    }
+
+    li {
+        width: 350px;
+    }
+}
